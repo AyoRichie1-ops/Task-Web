@@ -12,16 +12,15 @@ const NewTask = () => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [tag, setTag] = useState("");
-    const [create, setCreate] = useState(false);
+    const [creating, setCreating] = useState(false);
     const url = 'http://localhost:3000/api/v1/tasks';
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(tag);
-        setCreate(true);
+        setCreating(true);
         if (!title || !description || !tag) {
             toast.error('Please fill all fields');
-            setCreate(false);
+            setCreating(false);
             return;
         }
         try {
@@ -32,11 +31,11 @@ const NewTask = () => {
             });
 
             if (data.success) {
-                setCreate(false);
+                setCreating(false);
                 redirect('/all');
             } else {
                 toast.error('Task title already exists, create another');
-                setCreate(false);
+                setCreating(false);
             }
 
             setTitle('');
@@ -85,7 +84,7 @@ const NewTask = () => {
                     <option value="important">Important</option>
                 </select>
                 <button type='submit' className='newtaskbtn'>
-                    Done
+                    {creating ? 'Creating...' : 'Done'}
                 </button>
             </form>
             <h5 onClick={top} className='newtaskh5'>
