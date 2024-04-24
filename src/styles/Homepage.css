@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
+.home {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+}
+.homeh2 {
+  width: 92%;
+  font-size: 28px;
+  font-family: "Signika Negative", sans-serif;
+}
+.homespan {
+  color: #974fd0;
+}
+.taskimg {
+  width: 100%;
+}
+.taskbtn {
+  border: none;
+  background-color: #974fd0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  cursor: pointer;
+}
+.taskheader {
+  font-family: "Signika Negative", sans-serif;
+}
+.taskheader > span {
+  color: #974fd0;
+  padding-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  .homebody {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  .taskimg {
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .homebody {
+    padding-top: 4rem;
+  }
+  .homeh2 {
+    font-size: 38px;
+  }
+  .home p {
+    font-size: 20px;
+  }
+  .taskimg {
+    height: 40vh;
+  }
+}
+@media (min-width: 1440px) {
+  .homeh2 {
+    padding-top: 7rem;
+  }
+  .home p {
+    width: 75%;
+  }
+  .taskimg {
+    width: 500px;
+    margin-top: 2rem;
+  }
+}

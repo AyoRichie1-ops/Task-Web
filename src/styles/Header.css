@@ -1,0 +1,70 @@
+.navlogo {
+  font-size: 20px;
+  font-family: "Signika Negative", sans-serif;
+  margin-left: 1rem;
+}
+.navss {
+  text-align: center;
+  font-weight: 7600;
+}
+.hrefs {
+  font-family: "Signika Negative", sans-serif;
+}
+.taskheader {
+  padding: 1rem;
+  display: flex;
+}
+.taskheaderlink {
+  padding-top: 3rem;
+}
+.errorh1 {
+  font-size: 10rem;
+  color: #974fd0;
+  text-align: center;
+  padding-top: 5rem;
+}
+.errorp {
+  text-align: center;
+}
+.errorbtn {
+  border: none;
+  background-color: #974fd0;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-left: 4rem;
+}
+.errbody {
+  background-color: #c6a7df;
+  height: 100vh;
+}
+@media (min-width: 375px) {
+  .errorbtn {
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .errorbtn {
+    margin-left: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navlogo {
+    margin-left: 1.5rem;
+  }
+  .errorbtn {
+    margin-left: 17rem;
+  }
+}
+@media (min-width: 1024px) {
+  .errorbtn {
+    margin-left: 24rem;
+  }
+}
+@media (min-width: 1440px) {
+  .errorbtn {
+    margin-left: 35rem;
+  }
+}
