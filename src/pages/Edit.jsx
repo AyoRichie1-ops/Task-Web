@@ -81,8 +81,8 @@ const Edit = () => {
                     />
                     <span>Description</span>
                 </div>
-                <select value={tag} onChange={(e) => setTag(e.target.value)}>
-                    <option value="">Tags</option>
+                <select className='tags' value={tag} onChange={(e) => setTag(e.target.value)}>
+                    <option value="">---Tags----</option>
                     <option value="urgent">Urgent</option>
                     <option value="important">Important</option>
                 </select>
