@@ -13,7 +13,7 @@ const NewTask = () => {
     const [description, setDescription] = useState("");
     const [tag, setTag] = useState("");
     const [creating, setCreating] = useState(false);
-    const url = 'http://localhost:3000/api/v1/tasks';
+    const url = 'https://task-api-quy1.onrender.com/api/v1/tasks';
 
     const handleSubmit = async (event) => {
         event.preventDefault();
