@@ -13,7 +13,7 @@ const Edit = () => {
     const [description, setDescription] = useState("");
     const [tag, setTag] = useState("");
     const redirect = useNavigate();
-    const [update, setUpdate] = useState(false);
+    const [updating, setUpdating] = useState(false);
     const { taskId } = useParams();
     const url = `https://task-api-quy1.onrender.com/api/v1/tasks/${taskId}`;
 
@@ -32,7 +32,7 @@ const Edit = () => {
 
     const handleUpdate = async (e) => {
         e.preventDefault();
-        setUpdate(true);
+        setUpdating(true);
 
         try {
             const { data } = await axios.patch(url, {
@@ -87,7 +87,7 @@ const Edit = () => {
                     <option value="important">Important</option>
                 </select>
                 <button type='submit' className='newtaskbtn'>
-                    Done
+                    {updating ? "Updating" : "Done"}
                 </button>
             </form>
             <h5 onClick={top} className='newtaskh5'>
