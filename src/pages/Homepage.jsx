@@ -11,7 +11,7 @@ const Homepage = () => {
                     Manage your Tasks on <span className='homespan'>TaskDuty</span>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non tellus, sapien, morbi ante nunc euismod ac felis ac. Massa et, at platea tempus duis non eget. Hendrerit tortor fermentum bibendum mi nisl semper porttitor. Nec accumsan.
+                    Effortlessly stay organized and boost productivity with TaskDuty, your go-to platform for task management. Whether it's personal to-dos or team projects, TaskDuty keeps you on track with intuitive tools and seamless collaboration.
                 </p>
                 <a href="/all
             ">
