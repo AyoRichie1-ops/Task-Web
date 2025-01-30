@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+.newtask {
+  font-size: 25px;
+  color: black;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.inputBox {
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+}
+.inputBox input {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 10px;
+  padding: 10px;
+  border: 1px solid #b8b6b6;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #974fd0;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.8rem;
+  padding: 0 10px;
+  background-color: white;
+  border-left: 1px solid #974fd0;
+  border-right: 1px solid #974fd0;
+  letter-spacing: 0.1em;
+}
+.inputBox textarea {
+  width: 100%;
+  height: 50vh;
+  padding: 10px;
+  border: 1px solid #b8b6b6;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  transition: 0.5s;
+}
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  transition: 0.5s;
+}
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: #974fd0;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.8rem;
+  padding: 0 5px;
+  background-color: white;
+  border-left: 1px solid #974fd0;
+  border-right: 1px solid #974fd0;
+  letter-spacing: 0.1em;
+}
+.inputBox textarea:valid,
+.inputBox textarea:focus {
+  border: 1px solid #974fd0;
+}
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #974fd0;
+}
+.newtaskbtn {
+  padding: 1rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #974fd0;
+  width: 100%;
+}
+.newtaskh5 {
+  color: #974fd0;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 1rem;
+  font-weight: 300;
+}
+.tags {
+  padding: 0.7rem;
+  border: 1px solid #974fd0;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  outline: none;
+  text-decoration: none;
+}

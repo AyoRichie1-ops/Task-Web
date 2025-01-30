@@ -1,0 +1,37 @@
+.mytaskbody {
+  border: 0.5px solid #b8b6b6;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.mytaskh6 {
+  font-family: "Signika Negative", sans-serif;
+}
+.mytaskp {
+  font-family: "Signika Negative", sans-serif;
+  color: #b8b6b6;
+}
+.mytaskh2 {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+}
+.taskbtn1 {
+  border: none;
+  font-size: 14px;
+  background-color: #974fd0;
+  color: white;
+  padding: 0.2rem 0.6rem 0.34rem 0.5rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+.taskbtn2 {
+  border: 0.5px solid #974fd0;
+  font-size: 14px;
+  color: #974fd0;
+  background-color: white;
+  padding: 0.2rem 0.6rem 0.34rem 0.5rem;
+  border-radius: 5px;
+}
+.taskheading {
+  justify-content: space-between;
+}
